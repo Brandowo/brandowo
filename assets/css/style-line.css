@@ -1,0 +1,43 @@
+.vertical-navigation.entrance {
+  height: 70%;
+}
+.vertical-navigation {
+  position: absolute;
+  top: 16%;
+  left: 93%;
+  margin: 0 0 0 -1px;
+  height: 0%;
+  width: 2px;
+  background: #fff;
+  transition: height 1s ease-in-out;
+}
+ul.menu-pkts {
+  width: 310px;
+  position: relative;
+  top: 32%;
+  left: -292px;
+}
+.menu-pkts li {
+  color: #fff;
+  font-size: 18px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 31px;
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+.kolo {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: #fff;
+  left: -4px;
+  top: 230px;
+  border-radius: 100px;
+}
+.menu-pkts a:first-child {
+  color: #F97954;
+}

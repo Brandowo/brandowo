@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+@mixin out-expo($time, $delay: 0ms, $prop: all) {
+  -webkit-transition: $prop $time cubic-bezier(0.190, 1.000, 0.220, 1.000) $delay; 
+     -moz-transition: $prop $time cubic-bezier(0.190, 1.000, 0.220, 1.000) $delay; 
+       -o-transition: $prop $time cubic-bezier(0.190, 1.000, 0.220, 1.000) $delay; 
+          transition: $prop $time cubic-bezier(0.190, 1.000, 0.220, 1.000) $delay; /* easeOutExpo */
+}
+
+
+.vertical-navigation{
+    position: absolute;
+    top: 16%;
+    left: 93%;
+    margin: 0 0 0 -1px;
+    height: 0%;
+    width: 2px;
+    background: #fff;
+    transition: height 1s ease-in-out;
+    &.entrance {
+      height: 80%;
+    }
+    
+    .vertical-menu {
+      position: absolute;
+      list-style-type: none;
+      padding: 0;
+      width: 150px;
+      height: calc(100% - 70px);
+      top: 70px;
+      margin: 0 0 0 -7px;
+      @include out-expo(0.5s, 1.2s, 'opacity');
+      opacity: 0;
+      overflow: hidden;
+      
+      &.entrance {
+        opacity: 1;
+      }
+        .link {
+          position: relative;
+          z-index: 2;
+          float: left;
+          width: 100%;
+          margin: 0 0 80px 0;
+          
+          &:nth-child(1){
+            .dot {
+              @include out-expo(1s, 0.7s);
+              &.in {background: #007BA6;}
+            }
+            a {
+              @include out-expo(1s, 0.8s, 'opacity');
+            }
+            &.in {
+              a {color: #007BA6;}
+            }
+          }
+          
+          &:nth-child(2){
+            .dot {
+              @include out-expo(1s, 0.8s);
+              &.in {background: #56AF31;}
+            }
+            a {
+              @include out-expo(1s, 1s, 'opacity');
+            }
+            &.in {
+              a {color: #56AF31;}
+            }
+          }
+          
+          &:nth-child(3){
+            .dot {
+              @include out-expo(1s, 1s);
+              &.in {background: #E3B505;}
+            }
+            a {
+              @include out-expo(1s, 1.2s, 'opacity');
+            }
+            
+            &.in {
+              a {color: #E3B505;}
+            }
+          }
+          
+          &:nth-child(4){
+            .dot {
+              @include out-expo(1s, 1.3s);
+              &.in {background: #95190C;}
+            }
+            a {
+              @include out-expo(1s, 1.4s, 'opacity');
+            }
+            
+            &.in {
+              a {color: #95190C;}
+            }
+          }
+
+          &.last{
+            margin-bottom: 0;
+          }
+
+          &.track {
+            position: absolute;
+            z-index: 1;
+            background: white;
+            width: 15px;
+            height: 15px;
+            border-radius: 25px; 
+            display: none;
+
+            &.top {
+              top: 5px;
+            }
+          }
+
+          a {
+            text-decoration: none;
+            opacity: 0;
+            float: left;
+            cursor: pointer;
+            transform: translate3d(-20px, 0, 0);
+            margin: 3px 0 0 0;
+            font-size: 14px;
+            //text-transform: uppercase;
+            color: white;
+            @include out-expo(2s, 0.5s, color);
+            
+
+            &.animate {
+              opacity: 1;
+              transform: translate3d(0, 0, 0);
+            }
+          }
+
+          .dot {
+            width: 15px;
+            height: 15px;
+            background: #ffffff;
+            border-radius: 25px;
+            display: block;
+            float: left;
+            margin: 5px 12px 0 0;
+            transform: scale(0);
+
+            &.animate {
+              transform: scale(1);
+              @include out-expo(1s, 0.5s);
+            }
+
+            &.in {
+              background: #2A8A93;
+              @include out-expo(1s, 0.5s);
+            }
+          }
+       }
+    }
+}
