@@ -232,17 +232,18 @@ img {
     width: 940px;
     height: 118px;
     left: 133px;
-    font-family: Lato;
+    font-family: Roboto;
     font-style: normal;
     bottom: 399px;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 59px;
     line-height: 60px;
     text-transform: capitalize;
     color: #FFFFFF;
     border: none;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: left;
+    
 }
 .sec-txt {
     position: absolute;
@@ -254,8 +255,10 @@ img {
     font-weight: normal;
     font-size: 28px !important;
     line-height: 33px;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     text-align: left;
+    font-family: Roboto Condensed;
+
 }
 .btn-main {
     position: absolute;
@@ -578,13 +581,14 @@ font-weight: 500;
 font-size: 22px;
 line-height: 26px;
 text-align: center;
+color: #034FC1;
 }
 .card h3{
     font-family: Roboto;
 font-style: normal;
 font-weight: 300;
 font-size: 14px;
-line-height: 20px;
+line-height: 16px;
 
 }
 .card{
@@ -654,6 +658,7 @@ color: #1E304A;
     display: flex;
     align-items: center;
     transition-duration: 0.5s;
+    
 }
 ul.one-pkts.entrance {
     top: 152px;
@@ -872,6 +877,7 @@ background: rgba(8, 79, 185, 0.74) !important;
     padding: 33px;
     font-size: 22px;
     text-transform: capitalize;
+    font-family: Roboto;
 }
 .bott-tel {
     position: absolute;
@@ -879,6 +885,7 @@ background: rgba(8, 79, 185, 0.74) !important;
     font-size: 23px;
     color: #fff;
     top: 50px;
+    font-family: Roboto;
 }
 .subm input:hover{
     background-color: #FF5827;
@@ -894,7 +901,22 @@ background: rgba(8, 79, 185, 0.74) !important;
 }
 .menu-pkts li{
     transition-duration: 2s;
+    font-family: Open Sans !important;
+font-style: normal;
+font-weight: normal;
+font-size: 24px !important;
 }
 .one-pkts li:hover{
     color: #f97954;
+}
+#active-li-bn{
+    color:#F97954;
+    font-weight: bold;   
+}
+.button , .subm{
+    font-family: Roboto;
+    transition-duration: 1s !important;
+}
+.button:hover{
+    background-color: #FF5827 !important;
 }
