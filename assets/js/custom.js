@@ -91,3 +91,7 @@ $(document).ready(function(){
       $('body,html').animate({scrollTop: top}, 1500);
   });
 });
+$(document).ready(function(){
+	/* делаем плавное появление */
+        $(".card").fadeIn('slow');
+});

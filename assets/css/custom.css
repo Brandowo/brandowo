@@ -234,7 +234,7 @@ img {
     left: 133px;
     font-family: Roboto;
     font-style: normal;
-    bottom: 399px;
+   /* bottom: 399px;*/
     font-weight: 900;
     font-size: 59px;
     line-height: 60px;
@@ -250,7 +250,8 @@ img {
     width: 696px;
     height: 66px;
     left: 133px;
-    bottom: 276px;
+    /*bottom: 276px;*/
+    top:144px;
     font-style: normal;
     font-weight: normal;
     font-size: 28px !important;
@@ -261,13 +262,12 @@ img {
 
 }
 .btn-main {
-    position: absolute;
-    /* width: 200px; */
-    /* height: 60px; */
+    position: relative;
     left: 133px;
+    top: 226px;
     bottom: 237px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-    background-color:#F97954 !important;
+    background-color: #F97954 !important;
 }
 .logo{
     padding: 30px;
@@ -919,4 +919,38 @@ font-size: 24px !important;
 }
 .button:hover{
     background-color: #FF5827 !important;
+}
+.vert-stab.rr {
+    float: right;
+    right: 100px;
+    width: 50%;
+    top: 327px;
+    position: absolute;
+}
+.vert-stab.ll {
+    float: left;
+    width: 50%;
+    float: left;
+    top: 327px;
+    position: absolute;
+    height: 100%;
+}
+.vertical-navigation {
+    position: relative !important;
+    top: 0 !important;
+    left: 93%;
+    margin: 0 0 0 -1px;
+    height: 0%;
+    width: 2px;
+    background: #fff;
+    transition: height 1s ease-in-out;
+}
+.kolo {
+    width: 10px;
+    height: 10px;
+    position: relative !important;
+    background-color: #fff;
+    left: -4px;
+    top: 32px !important;
+    border-radius: 100px;
 }
