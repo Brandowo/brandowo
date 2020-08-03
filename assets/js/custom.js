@@ -120,6 +120,21 @@ $(document).ready(function(){
   $('#cinco').on('mouseenter', function(){
     $('.kolo').css('top','255px')
   });
+  $('.one-pkts a:nth-child(1)').on('mouseenter', function(){
+    $('.kolo-slide').css('top','36px')
+  });
+  $('.one-pkts a:nth-child(2)').on('mouseenter', function(){
+    $('.kolo-slide').css('top','71px')
+  });
+  $('.one-pkts a:nth-child(3)').on('mouseenter', function(){
+    $('.kolo-slide').css('top','105px')
+  });
+  $('.one-pkts a:nth-child(4)').on('mouseenter', function(){
+    $('.kolo-slide').css('top','140px')
+  });
+  $('.one-pkts a:nth-child(5)').on('mouseenter', function(){
+    $('.kolo-slide').css('top','169px')
+  });
   //function kol(param){
    // $('.kolo').css('top',param+'px')
    // }
