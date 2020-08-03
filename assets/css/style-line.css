@@ -35,7 +35,6 @@ ul.menu-pkts {
   position: absolute;
   background-color: #fff;
   left: -4px;
-  top: 230px;
   border-radius: 100px;
 }
 .menu-pkts a:first-child {

@@ -266,6 +266,7 @@ img {
     left: 133px;
     top: 293px;
     bottom: 237px;
+    width:318px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     background-color: #F97954 !important;
 }
@@ -951,7 +952,8 @@ font-size: 24px !important;
     position: relative !important;
     background-color: #fff;
     left: -4px;
-    top: 32px !important;
+    top: 32px ;
+    transition-duration: 2s;
     border-radius: 100px;
 }
 #crm{

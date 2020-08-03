@@ -103,3 +103,24 @@ $(document).ready(function(){
 	/* делаем плавное появление */
         $(".card").fadeIn('slow');
 });
+//menu-pkts
+$(document).ready(function(){
+  $('.menu-pkts li').first().on('mouseenter', function(){
+    $('.kolo').css('top','32px')
+  });
+  $('#dos').on('mouseenter', function(){
+    $('.kolo').css('top','88px')
+  });
+  $('#tres').on('mouseenter', function(){
+    $('.kolo').css('top','142px')
+  });
+  $('#quatro').on('mouseenter', function(){
+    $('.kolo').css('top','197px')
+  });
+  $('#cinco').on('mouseenter', function(){
+    $('.kolo').css('top','255px')
+  });
+  //function kol(param){
+   // $('.kolo').css('top',param+'px')
+   // }
+})
