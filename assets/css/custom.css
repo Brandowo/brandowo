@@ -588,9 +588,9 @@ color: #034FC1;
     font-family: Roboto;
 font-style: normal;
 font-weight: 300;
-font-size: 14px;
+font-size: 16px;
 line-height: 16px;
-
+text-transform: capitalize;
 }
 .card{
 padding: 19px;
