@@ -992,3 +992,31 @@ font-size: 24px !important;
     font-size: 16px;
     color: #477ccb;
 }
+.switch {
+    position: relative;
+    float: right;
+    top: -277px;
+    display: inline-flex;
+    right:76px;
+}
+ul.lang-sw.entrance {
+    display: flex;
+}
+.lang-sw li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    text-transform: capitalize;
+    z-index: 99999;
+    cursor: pointer;
+}
+.lang-sw li:hover{
+    color:#FF5827 ! important;
+}
+.lang-sw li:first-child{
+    color:#FF5827;   
+}
