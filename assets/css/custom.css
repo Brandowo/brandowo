@@ -65,6 +65,8 @@ body {
 
 body, html {
   height: 100%;
+  /*position: fixed;
+  width: 100%;*/
 }
 
 a {
@@ -968,4 +970,25 @@ font-size: 24px !important;
     top: 71px ;
     transition-duration: 2s;
     border-radius: 100px;
+}
+#footer {
+   
+    overflow: hidden;
+}
+.label-active {
+    color: #477ccb !important;
+    font-size: 14px !important;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 3px !important;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.thre-lab-act {
+    top: 4px;
+    font-size: 16px;
+    color: #477ccb;
 }

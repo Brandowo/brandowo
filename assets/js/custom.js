@@ -138,4 +138,26 @@ $(document).ready(function(){
   //function kol(param){
    // $('.kolo').css('top',param+'px')
    // }
+
 })
+$('#two-inp').focus(function(){
+$('#two-lab').addClass('label-active')
+})
+
+$('#two-inp').focusout(function(){
+$('#two-lab').removeClass('label-active')
+})
+$('#one-inp').focus(function(){
+  $('#one-lab').addClass('label-active')
+  })
+  
+  $('#one-inp').focusout(function(){
+  $('#one-lab').removeClass('label-active')
+  })
+  $('.three-inp').focus(function(){
+    $('.thre-lab').addClass('thre-lab-act ')
+    })
+    
+    $('.three-inp').focusout(function(){
+    $('.thre-lab').removeClass('thre-lab-act ')
+    })
