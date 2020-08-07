@@ -161,3 +161,18 @@ $('#one-inp').focus(function(){
     $('.three-inp').focusout(function(){
     $('.thre-lab').removeClass('thre-lab-act ')
     })
+    function call() {
+      var msg   = $('#formx').serialize();
+         $.ajax({
+           type: 'POST',
+           url: 'formx.php', //обращаемся к обработчику
+           data: msg,
+          success: function(data) {  //в случае успеха выводим результаты в div "results"
+              $('#formx').remove(); //скрываем форму после отправки 
+              $('#results').html(data); //показываем сообщение об успехе вместо неё 
+           },
+           error:  function(xhr, str){ //ошибка выводит соответствующее сообщение 
+        alert('Возникла ошибка: ' + xhr.responseCode);
+           }
+         });
+     }
