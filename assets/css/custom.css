@@ -261,6 +261,7 @@ img {
     color: #FFFFFF !important;
     text-align: left;
     font-family: Roboto Condensed;
+    text-transform: none !important;
 
 }
 .btn-main {
@@ -573,7 +574,7 @@ color: #000000;
     width: 52%;
     position: absolute;
     display: block;
-    margin-top: 121px;
+    margin-top: 202px;
     left: -7%;
    
 }
@@ -593,6 +594,7 @@ font-weight: 300;
 font-size: 16px;
 line-height: 16px;
 text-transform: capitalize;
+text-align: center;
 }
 .card{
 padding: 19px;
@@ -640,7 +642,7 @@ font-weight: normal;
 font-size: 22px;
 line-height: 26px;
 text-align: center;
-text-transform: capitalize;
+text-transform: none;
 
 color: #1E304A;
 }
@@ -726,7 +728,7 @@ color: #034FC1;
     width: 52%;
     position: absolute;
     display: block;
-    margin-top: 121px;
+    margin-top: 209px;
     left: 21%;
 }
 .iphone{
@@ -835,13 +837,14 @@ textarea {
     margin-left: 47px;
     width: 557px;
 }
-.subm input {
+.subm button {
     width: 150px;
     position: relative;
     top: 174px;
     left: -32px;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
     background-color: #F97954;
+    height: 60px;
     border-radius:14px;
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
@@ -927,14 +930,14 @@ font-size: 24px !important;
     float: right;
     right: 100px;
     width: 50%;
-    top: 327px;
+    top: 286px;
     position: absolute;
 }
 .vert-stab.ll {
     float: left;
     width: 50%;
     float: left;
-    top: 327px;
+    top: 286px;
     position: absolute;
     height: 100%;
 }
@@ -987,6 +990,17 @@ font-size: 24px !important;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
 }
+label {
+    font-size: 14px !important;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 3px !important;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
 .thre-lab-act {
     top: 4px;
     font-size: 16px;
@@ -995,7 +1009,7 @@ font-size: 24px !important;
 .switch {
     position: relative;
     float: right;
-    top: -277px;
+    top: -234px;
     display: inline-flex;
     right:76px;
 }
@@ -1019,4 +1033,7 @@ ul.lang-sw.entrance {
 }
 .lang-sw li:first-child{
     color:#FF5827;   
+}
+.menu-mob{
+    display: none;
 }

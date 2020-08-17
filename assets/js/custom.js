@@ -161,3 +161,78 @@ $('#one-inp').focus(function(){
     $('.three-inp').focusout(function(){
     $('.thre-lab').removeClass('thre-lab-act ')
     })
+    //var alerted = window.alert('works')
+    //function call() {
+    //  var msg   = $('#formx').serialize();
+    //     $.ajax({
+   //        type: 'POST',
+    //       url: 'formx.php', //обращаемся к обработчику
+    //       data: msg,
+    //       datatype:'json',
+    //      success: alerted,
+     //      error:  function(xhr, str){ //ошибка выводит соответствующее сообщение 
+     //   alert('Возникла ошибка: ' + xhr.responseCode);
+     //      },
+      //     complete: function(){
+       //      alert('complete');
+        //   }
+        // });
+     //}
+     //
+     $(document).ready(function (){
+      $("#formx").submit(function call() { //устанавливаем событие отправки для формы с id=form
+              var form_data = $(this).serialize(); //собераем все данные из формы
+              $.ajax({
+              type: "POST", //Метод отправки
+              url: "formx.php", //путь до php фаила отправителя
+              data: form_data,
+              success: function() {
+                     //код в этом блоке выполняется при успешной отправке сообщения
+                     alert("Ваше сообщение отпрвлено!");
+              });
+      });
+  });
+     //
+     $(document).ready(function(){
+      if ($(window).width() <768){
+        let screw = $(document).width()
+$('body').css('width',screw+'px')
+        $('.navPanelToggle').remove();
+        $('header').append('<span class="fa fa-bars"></span><span class="fa fa-close"></span>');
+        $('.fa-close').hide()
+        $('.fa-bars').on('click',function(){
+          $('.menu-mob').fadeIn()
+          $('.vertical-navigation.entrance').fadeIn()
+          $('.fa-bars').hide();
+          $('.fa-close').show()
+
+          })
+          $('.fa-close').on('click',function(){
+            $('.menu-mob').fadeOut();
+            $('.vertical-navigation.entrance').fadeOut();
+            $('.fa-close').hide();
+            $('.fa-bars').show()
+  
+           })
+           $('#active-li-bn ').on('click', function(){
+            $('.kolo').css('top',$('#active-li-bn ').offset().top +'px')
+setTimeout(function(){$('.fa-close').click();},2100)
+          });
+        $('li#dos').on('click', function(){
+            $('.kolo').css('top',$('li#dos ').offset().top +'px')
+            setTimeout(function(){$('.fa-close').click();},2100)
+        })
+        $('li#tres').on('click', function(){
+            $('.kolo').css('top',$('li#tres ').offset().top +'px')
+            setTimeout(function(){$('.fa-close').click();},2100)
+        })
+        $('li#quatro').on('click', function(){
+            $('.kolo').css('top',$('li#quatro ').offset().top +'px')
+            setTimeout(function(){$('.fa-close').click();},2100)
+        })
+        $('li#cinco').on('click', function(){
+            $('.kolo').css('top',$('li#cinco ').offset().top +'px')
+            setTimeout(function(){$('.fa-close').click();},2100)
+        })
+          }
+     })
