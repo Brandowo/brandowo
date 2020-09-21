@@ -253,3 +253,9 @@ ul.lang-sw.entrance {
   background-size: cover;
 
   }
+  .partners img:first-child {
+    width: 477px;
+    position: relative;
+    top: 0;
+}
+}

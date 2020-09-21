@@ -6,14 +6,22 @@
 -->
 <html>
 	<head>
-		<title>Brandowo - Брендинговое агентство</title>
+		<title>Brandowo - Agencja brandingowa</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
 		<link rel="stylesheet" href="assets/css/custom-antony.css" />
 		<link rel="stylesheet" href="assets/css/style-line.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176734881-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-176734881-1');
+</script>
 		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -34,11 +42,11 @@
 		<!-- Banner -->
 			<section id="banner">
 				<div class="vert-stab ll">
-				<h2 class="main-txt">Новое поколение услуг. Делать бизнес С нами легко. </h2>
-				<p class="sec-txt">BRANDOWO —  Заниматься бизнесом еще никогда не было так просто.Мы сделаем всю грязную работу , а вы начинаете работать директором своего бизнеса без лишних нервов</p>
+				<h2 class="main-txt">Uslugi nowej generacji.Rozkrecić biznes z nami łatwo.</h2>
+				<p class="sec-txt">BRANDOWO — Prowadzenie interesów nigdy nie było tak łatwe, wykonamy całą brudną robotę i bez dodatkowych nerwów ty zaczniesz pracować jako dyrektor swojego biznesu.</p>
 				<ul class="actions butt-s">
-					<li><a href="#one" class="button special big btn-main">Начать бизнес</a></li>
-					<li><a href="#three" class="button button-two special big btn-main">Продвигать бизнес</a></li>
+					<li><a href="#one" class="button special big btn-main">Zalożyć firmę</a></li>
+					<li><a href="#three" class="button button-two special big btn-main">Rozkręcić firmę</a></li>
 
 				</ul>
 				</div>
@@ -46,19 +54,19 @@
 				<div class="vert-stab rr">
 				<div class="switch">
 					<ul class="lang-sw">
-						<li>ru</li>
-						<li>pl</li>
-						<li>en</li>
+						<a href="/ru"><li>ru</li></a>
+						<li id="act-li">pl</li>
+						<a href="/en"><li>en</li></a>
 					</ul>
 				</div>
 					<nav class="vertical-navigation ">
 					<div class="kolo"></div>
 					<ul class="menu-pkts">
-						<a href="#banner"><li id="active-li-bn">01. Главная</li></a>
-						<a href="#one"><li id="dos">02. Начать бизнес</li></a>
-						<a href="#two"><li id="tres">03. Наши партнеры</li></a>
-						<a href="#three"><li id="quatro">04. Есть фирма</li></a>
-						<a href="#four">	<li id="cinco">05. Контакт</li></a>
+						<a href="#banner"><li id="active-li-bn">01. Glówna</li></a>
+						<a href="#one"><li id="dos">02. Zalożyć firmę</li></a>
+						<a href="#two"><li id="tres">03. Nasi Partnerzy</li></a>
+						<a href="#three"><li id="quatro">04. Rozkręcić firmę</li></a>
+						<a href="#four">	<li id="cinco">05. Kontakt</li></a>
 
 					</ul>
 				</nav>			
@@ -77,18 +85,18 @@
 								</header>
 							</div>-->
 							<div class="one-title">
-							<h2>Открыть фирму</h2>
-							<h3>Brandowo- это агрегатор всего, что нужно для открытия бизнеса.<br> Полный комплект услуг и специалистов.
-								Юридические услуги , Маркетинг, Дизайн , создание сайтов и многое другое</h3>
+							<h2>Otworzyć Firmę</h2>
+							<h3>Brandowo — jest agregatorem wszystkiego , czego potrzebujesz aby rozpoczac wlasny biznes.<br>
+								Pełen zakres usług i specjalistów. Uslugi prawnika, Marketing , design,tworzenie stron internetowych, ksiegowość.</h3>
 							</div>
 							<div class="one-menu">
 								<img src="images/mini-logo.png"/>
 							<ul class="one-pkts">
-								<a href="#banner"><li href="#">01. Главная</li></a>
-								<a href="#one"><li id="active-li">02. Начать бизнес</li></a>
-								<a href="#two"><li>03. Наши партнеры</li></a>
-								<a href="#three"><li>04. Есть фирма</li></a>
-								<a href="#four">	<li>05. Контакт</li></a>
+								<a href="#banner"><li href="#">01. Glówna</li></a>
+								<a href="#one"><li id="active-li">02. Zalożyć firmę</li></a>
+								<a href="#two"><li>03. Nasi Partnerzy</li></a>
+								<a href="#three"><li>04. Rozkręcić firmę</li></a>
+								<a href="#four">	<li>05. Kontakt</li></a>
 				
 								</ul>
 								<div class="one-line"> <div class="kolo-slide"></div></div>
@@ -96,46 +104,44 @@
 							<div class="card-content">
 								<div class="card c-1" >
 									<img src="images/lawer.png"/>
-									<h2>Услуги юриста</h2>
+									<h2>Uslugi prawnika</h2>
 									<h3>
-										Регистрация фирмы и оформление всех необходимых документов опытным специалистом, который будет сопровождать ваш бизнес , гарантируя безопасность ведения дел. Станем незаменимым советчиком и поможем решить проблемы фирмы.
+										Rejestracja firmy i przygotowanie wszystkich niezbędnych dokumentów przez doświadczonego specjalistę, który będzie towarzyszył Twojej firmie, gwarantując bezpieczeństwo prowadzenia działalności. Staniemy się niezastąpionym doradcą i pomożemy rozwiązywać problemy firmy
 									</h3>
 								</div>
 								<div class="card c-2" >
 									<img src="images/bb.png"/>
-									<h2>Брендбук</h2>
+									<h2>Brandbook</h2>
 									<h3>
-										Заложим фундамент вашего бизнеса — фирменный стиль. Логотип, подбор цветов и использование их,
-										 продумаем все подробности от использование фирменного стиля на чашках в вашем офисе, до продающего вида на Биллбордах
+										Położymy fundament Twojej firmy - identyfikację wizualną. Logo, dopasowywanie kolorów i ich używanie, przemyślimy wszystkie szczegóły - od używania atrybutów firmy na filiżankach w biurze, po wyglad na billboardach
 									</h3>
 								</div>
 								<div class="card c-3" >
 									<img src="images/webdev.png"/>
-									<h2>Создание сайтов</h2>
+									<h2>Strona internetowa</h2>
 									<h3>
-										Вебсайт, потенциально, основной источник вашего трафика,а значит, основной источник вашего дохода. Наши дизайнеры и программисты спроектируют и разработают ваш сайт , увеличим ваш доход и узнаваемость
-
+										Strona internetowa jest potencjalnie głównym źródłem ruchu klientów, co oznacza ze jest głównym źródłem dochodów. Nasi projektanci i  programiści zaprojektują  i stworzą strone internetową dla ciebie. Zwiekszymy twój dochod i rozpoznawalność
 									</h3>
 								</div>
 								<div class="card c-4" >
 									<img src="images/ads.png"/>
-									<h2>Рекламная кампания</h2>
+									<h2>KAMPANIA REKLAMOWA</h2>
 									<h3>
-										Продумаем и создадим сильную рекламную стратегию. Нарисуем или снимем рекламный ролик , приведем первых клиентов и приумножим количество существующих. Проработаем и обеспечим узнаваемость вашего бренда									</h3>
+										Pomyślimy i stworzymy silną strategię reklamową. Narysujemy lub nakręcimy film reklamowy, sprowadzimy pierwszych klientów i zwiększymy liczbę istniejących. Wypracujemy i zapewnimy rozpoznawalność Twojej marki
+									</h3>
 								</div>
 								<div class="card c-5" >
 									<img src="images/buh.png"/>
-									<h2>Услуги Бухгалтера</h2>
+									<h2>Uslugi księgowego</h2>
 									<h3>
-										Сколько будет 2+2? А сколько вам нужно? Наши  бухгалтера полностью возьмут на себя отношения с налоговой, посчитают, сложат годовой отчет и уберегут от проблем с расчетами.
-										поможем сэкономить . Покажем как  не оплачивать zus и pit
+										Nasze ksiegowe calkowicie przejmą wszystkie sprawy związane z urzędem skarbowym.Rozliczą i zlożą sprawozdanie finansowe.Zabiezpieczymy przed problemami z inspekcją podatkową .Optymaliizujemy podatki.Pokazemy , jak nie placić ZUS i PIT 
 									</h3>
 								</div>
 								<div class="card c-6" >
 									<img src="images/inclusive.png"/>
-									<h2>Полное сопровождение</h2>
+									<h2>PEŁNE WSPARCIE</h2>
 									<h3>
-										Боитесь делать первые шаги в бизнесе? Мы готовы поделится своим опытом ведения дел. Поддержка на начальных этапах, поможет быстро набраться опыта , не сделать ошибок на первом этапе и выстроить сильную стратегию предприятия
+										Boisz się postawić pierwsze kroki w biznesie? Jesteśmy gotowi podzielić się naszym doświadczeniem w zalatwianiu interesów. Wsparcie na wczesnych etapach, pomoże Ci szybko zdobyć doświadczenie, nie popełniać błędów i budować mocną strategię przedsiębiorstwa
 									</div>
 							</div>
 							<div class="comp">
@@ -150,18 +156,18 @@
 					<div class="two-menu">
 						<img src="images/mini-logo.png"/>
 					<ul class="one-pkts">
-						<a href="#banner"><li >01. Главная</li></a>
-						<a href="#one"><li>02. Начать бизнес</li></a>
-						<a href="#two"><li id="active-li">03. Наши партнеры</li></a>
-						<a href="#three"><li>04. Есть фирма</li></a>
-						<a href="#four">	<li>05. Контакт</li></a>
+						<a href="#banner"><li >01. Glówna</li></a>
+						<a href="#one"><li>02. Zalożyć firmę</li></a>
+						<a href="#two"><li id="active-li">03. Nasi Partnerzy</li></a>
+						<a href="#three"><li>04. Rozkręcić firmę</li></a>
+						<a href="#four">	<li>05. Kontakt</li></a>
 						</ul>
 						<div class="one-line"> <div class="kolo-slide"></div></div>
 					</div>
 					<div class="container">
 					
 						<div class="partners-title">
-						<h2>Наши партнеры</h2>
+						<h2>Nasi Partnerzy</h2>
 						</div>
 						<div class="partners">
 						<img src="images/kks.png"/>
@@ -179,17 +185,17 @@
 					<div class="row 200%">
 					
 						<div class="one-title">
-						<h2>Продвижение бизнеса</h2>
-						<h3>Brandowo предлагает помощь не только новичкам, но уже существующим фирмам.<br> Хотите улучшить показатели и получить новых клиентов? Тогда наше предложение для вас</h3>
+						<h2>PROMOCJA BIZNESOWA</h2>
+						<h3>Brandowo oferuje pomoc nie tylko początkującym, ale także istniejącym już firmom.<br>Chcesz poprawić swoje wyniki i zdobyć nowych klientów? Nasza oferta jest dla Ciebie</h3>
 						</div>
 						<div class="one-menu">
 							<img src="images/mini-logo.png"/>
 						<ul class="one-pkts">
-						<a href="#banner"><li >01. Главная</li></a>
-						<a href="#one"><li>02. Начать бизнес</li></a>
-						<a href="#two"><li>03. Наши партнеры</li></a>
-						<a href="#three"><li  id="active-li">04. Есть фирма</li></a>
-						<a href="#four">	<li>05. Контакт</li></a>
+						<a href="#banner"><li >01. Glówna</li></a>
+						<a href="#one"><li>02. Zalożyć firmę</li></a>
+						<a href="#two"><li>03. Nasi Partnerzy</li></a>
+						<a href="#three"><li  id="active-li">04. Rozkręcić firmę</li></a>
+						<a href="#four">	<li>05. Kontakt</li></a>
 			
 							</ul>
 							<div class="one-line"> <div class="kolo-slide"></div></div>
@@ -197,36 +203,37 @@
 						<div class="card-content-three">
 							<div class="card c-1" >
 								<img src="images/webdev.png"/>
-								<h2>Создание сайтов</h2>
+								<h2>Strona internetowa</h2>
 								<h3>
-									Вебсайт, потенциально, основной источник вашего трафика,а значит, основной источник вашего дохода. Наши дизайнеры и программисты спроектируют и разработают ваш сайт , увеличим ваш доход и узнаваемость
+									Strona internetowa jest potencjalnie głównym źródłem ruchu klientów, co oznacza ze jest głównym źródłem dochodów. Nasi projektanci i  programiści zaprojektują  i stworzą strone internetową dla ciebie. Zwiekszymy twój dochod i rozpoznawalność
 								</h3>
 							</div>
 							<div class="card c-2" >
 								<img src="images/crm.png" id="crm"/>
-								<h2>CRM система</h2>
+								<h2>System crm</h2>
 								<h3>
-									Хотите сохранить старых Клиентов и найти новых постоянных?Наши программисты создадут эффективную систему взаимоотношения с клиентами - CRM. Она существенно повысит доход предприятия за счет анализа и реакции на потребности клиентов
+									Chcesz zatrzymać starych klientów i znaleźć nowych stałych klientów, nasi programiści stworzą efektywny system relacji z klientami - CRM. Zwiększy znacząco przychody przedsiębiorstwa dzięki analizie i odpowiedzi na potrzeby klientów
 								</h3>
 							</div>
 							<div class="card c-3" >
 								<img src="images/ads.png"/>
-								<h2>Рекламная кампания</h2>
-								<h3>
-									Продумаем и создадим сильную рекламную стратегию. нарисуем или снимем рекламный ролик , Правильно настроим рекламу в интернете. Сверстаем наружную рекламу и проведем анализ ваших старых рекламных компании, чтобы уберечь от старых ошибок
-								</h3>
+								<h2>KAMPANIA REKLAMOWA</h2>
+									<h3>
+										Pomyślimy i stworzymy silną strategię reklamową. Narysujemy lub nakręcimy film reklamowy, sprowadzimy pierwszych klientów i zwiększymy liczbę istniejących. Wypracujemy i zapewnimy rozpoznawalność Twojej marki
+									</h3>
 							</div>
 							<div class="card c-4" >
 								<img src="images/buh.png"/>
-								<h2>Услуги Бухгалтера</h2>
+								<h2>Uslugi księgowego</h2>
 								<h3>
-									Если вы уже имеете предприятие , вы могли  заметить , что слишком много денег забирают налоги. Мы можем не только обеспечить вас лицензированым и ответственным бухгалтером, но еще и покажем как снизить налоговую нагрузку								</h3>
+									Jeśli jesteś już właścicielem firmy, być może zauważyłeś, że zbyt dużo pieniędzy pobiera podatek. Możemy nie tylko zapewnić licencjonowanego i odpowiedzialnego księgowego, ale możemy również pokazać, jak zmniejszyć obciążenie podatkowe. Pokazemy jak nie placic ZUS i PIT
+								</h3>
 							</div>
 							<div class="card c-5" >
 								<img src="images/bb.png"/>
-								<h2>Услуги дизайнера</h2>
+								<h2>Uslugi designera</h2>
 								<h3>
-									Даже состоявшемуся бизнесу нужно выглядеть свежо и красиво.Обновить стиль или дополнить ваши старые фирменные атрибуты помогут наши дизайнеры. Свяжитесь с нами, чтобы увидеть наши многочисленные работы
+									Nawet firma o ugruntowanej pozycji musi wyglądać świeżo i pięknie. W aktualizacji stylu lub uzupełnieniu starych atrybutów marki zaufaj naszym mprojektantom. Skontaktuj się z nami, aby zobaczyć nasze liczne prace
 								</h3>
 							</div>
 						<!---	<div class="card c-6" >
@@ -247,33 +254,33 @@
 			<!-- Four -->
 				<section id="four" class="wrapper  special">
 							<div class="one-title">
-								<h2>Свяжитесь с нами</h2>
+								<h2>SKONTAKTUJ SIĘ Z NAMI</h2>
 							</div>	
-							<form id="formx" method="POST" action="" onsubmit="call()">
+							<form id="formx" method="POST" action="formx-pl.php" >
     				<div class="inps">
 								<div class="group">      
 								  <input id="two-inp" name="name" type="text" required>
 								  <span class="highlight"></span>
 								  <span class="bar"></span>
-								  <label id="two-lab">Имя</label>
+								  <label id="two-lab">Imię</label>
 								</div>
 								  
 								<div class="group">      
 								  <input id="one-inp" name="tel" type="number" required>
 								  <span class="highlight"></span>
 								  <span class="bar"></span>
-								  <label id="one-lab">Телефон</label>
+								  <label id="one-lab">Numer</label>
 								</div>
 					    </div>
 								<div class="group">      
 									<textarea class="three-inp" name="text" type="text" ></textarea>
 									<span class="highlight"></span>
 									<span class="bar"></span>
-									<label id="mess" class="thre-lab" >Сообщение</label>
+									<label id="mess" class="thre-lab" >Wiadomość</label>
 								  </div>
 								
 								  <div class="subm">
-										  <button type="submit" class="sbm-button" name="send" >Отправить</button>
+										  <button type="submit" class="sbm-button" name="send" >wyślij</button>
 									  </div>
 							  </form>			
 					
@@ -282,19 +289,19 @@
 			<nav class="vertical-navigation ">
 				<div class="kolo"></div>
 				<ul class="menu-pkts">
-					<a href="#banner"><li id="active-li-bn">01. Главная</li></a>
-					<a href="#one"><li id="dos">02. Начать бизнес</li></a>
-					<a href="#two"><li id="tres">03. Наши партнеры</li></a>
-					<a href="#three"><li id="quatro">04. Есть фирма</li></a>
-					<a href="#four">	<li id="cinco">05. Контакт</li></a>
+					<a href="#banner"><li id="active-li-bn">01. Glówna</li></a>
+					<a href="#one"><li id="dos">02. Zalożyć firmę</li></a>
+					<a href="#two"><li id="tres">03. Nasi Partnerzy</li></a>
+					<a href="#three"><li id="quatro">04. Rozkręcić firmę</li></a>
+					<a href="#four">	<li id="cinco">05. Kontakt</li></a>
 
 				</ul>
 			</nav>
 			<div class=" switch-mob">
 				<ul class="lang-sw">
-					<li>ru</li>
+					<a href="/ru"><li>ru</li></a>
 					<li>pl</li>
-					<li>en</li>
+					<a href="/en"><li>en</li></a>
 				</ul>
 			</div>
 			</div>
@@ -302,11 +309,11 @@
 			<footer id="footer">
 				<img src="images/logo.png" class="logo-bottom"/>
 				<div class=" bottom-menu">
-					<a href="">Главная</a>
-					<a href="">Начать бизнес</a>
-					<a href="">Наши партнеры</a>
-					<a href="">Есть фирма</a>
-					<a href="">Контакт</a>
+					<a href="#banner">Glówna</a>
+					<a href="#one">Zalożyć firmę</a>
+					<a href="#two">Nasi Partnerzy</a>
+					<a href="#three">Rozkręcić firmę</a>
+					<a href="#four">Kontakt</a>
 				</div>
 				<h2 class="bott-tel">+48795748042</h2>
 			</footer>
